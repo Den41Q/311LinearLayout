@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnZero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "0");
             }
         });
@@ -53,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "1");
             }
         });
@@ -60,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "2");
             }
         });
@@ -67,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "3");
             }
         });
@@ -74,6 +86,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "4");
             }
         });
@@ -81,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnFive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "5");
             }
         });
@@ -88,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnSix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "6");
             }
         });
@@ -95,6 +116,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnSeven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "7");
             }
         });
@@ -102,6 +126,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnEight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "8");
             }
         });
@@ -109,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
         mBtnNine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if ("0".equalsIgnoreCase(result.getText().toString())) {
+                    result.setText(" ");
+                }
                 result.setText(result.getText().toString() + "9");
             }
         });
@@ -116,7 +146,10 @@ public class MainActivity extends AppCompatActivity {
         mBtnPoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                result.setText(result.getText().toString() + ".");
+                if (!result.getText().toString().contains(".")) {
+                    result.setText(result.getText().toString() + ".");
+                } else {
+                }
             }
         });
     }
